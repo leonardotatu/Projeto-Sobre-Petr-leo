@@ -3,19 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Sobre Petróleo | O Ouro Negro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>PETRÓLEO</title>
 </head>
 <body>
-    <body>
-  <div class="caixa-principal">
-    <h1>PETRÓLEO</h1>
-    <div class="caixa-perguntas"></div>
-    <div class="caixa-alternativas"></div>
-    <div class="caixa-resultado">
-        <p class="texto-resultado"></p>
-    </div>
-  </div>
-</body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-oil-well"></i> <span>PetroInfo</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">O que é?</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#derivados">Derivados</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>A Indústria do Petróleo</h1>
+            <p>Conheça a origem, a extração e o impacto da principal fonte de energia do mundo moderno.</p>
+            <a href="#sobre" class="btn-primary">Explorar Projeto</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" class="section">
+            <div class="section-header">
+                <h2>O que é o Petróleo?</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid-2">
+                <div class="card-text">
+                    <p>O <strong>petróleo</strong> (do latim <em>petrus</em> = pedra e <em>oleum</em> = óleo) é um combustível fóssil líquido, denso e inflamável, composto principalmente por hidrocarbonetos.</p>
+                    <p>Formado ao longo de milhões de anos pela decomposição de matéria orgânica (principalmente fitoplâncton e algas) sob altas pressões e temperaturas no fundo de mares e lagos antigos, é hoje o pilar da matriz energética e industrial global.</p>
+                </div>
+                <div class="card-img">
+                    <img src="aet.20041007-lagoaazul-wkps.jpg" alt="Refinaria de Petróleo à Noite">
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="section dark-bg">
+            <div class="section-header">
+                <h2>Galeria Visual</h2>
+                <div class="line"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=600&q=80" alt="Plataforma Offshore">
+                    <div class="gallery-desc">Plataforma Offshore (Mar)</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Refinaria e Tubulações">
+                    <div class="gallery-desc">Refinaria e Infraestrutura</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1527018601619-a508a2be00cd?auto=format&fit=crop&w=600&q=80" alt="Bomba de Combustível">
+                    <div class="gallery-desc">Distribuição de Combustíveis</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="derivados" class="section">
+            <div class="section-header">
+                <h2>Principais Derivados</h2>
+                <div class="line"></div>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <i class="fa-solid fa-car icon"></i>
+                    <h3>Gasolina & Diesel</h3>
+                    <p>Combustíveis essenciais para o transporte terrestre, movimentando carros, autocarros e camiões em todo o mundo.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-plane icon"></i>
+                    <h3>Querosene de Aviação</h3>
+                    <p>Utilizado para alimentar turbinas de aeronaves comerciais e militares com alta eficiência energética.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-bottle-water icon"></i>
+                    <h3>Plásticos & Polímeros</h3>
+                    <p>Matéria-prima de grande parte dos embalamentos, dispositivos eletrónicos, tecidos sintéticos e artigos hospitalares.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-fire-flame-simple icon"></i>
+                    <h3>Gás Liquefeito (GLP)</h3>
+                    <p>O famoso gás de cozinha, amplamente empregue no aquecimento e na preparação de alimentos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="curiosidades" class="section dark-bg">
+            <div class="section-header">
+                <h2>Fatos Curiosos</h2>
+                <div class="line"></div>
+            </div>
+            <div class="interactive-box">
+                <i class="fa-solid fa-lightbulb highlight-icon"></i>
+                <p id="fato-texto">Clique no botão abaixo para descobrir um facto surpreendente sobre o petróleo!</p>
+                <button id="btn-curiosidade" class="btn-secondary">
+                    <i class="fa-solid fa-shuffle"></i> Nova Curiosidade
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><i class="fa-solid fa-oil-well"></i> Projeto Educativo sobre Petróleo</p>
+            <p class="copyright">&copy; 2026 - Desenvolvido para estudo e apresentação.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
